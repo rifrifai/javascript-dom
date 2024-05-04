@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Method</title>
+  </head>
+  <body>
+    <div id="content" class="content">
+      <h1 id="title" class="title">Ini adalah Judul</h1>
+      <p id="description" class="description">
+        Ini adalah description dengan banyak isi didalamnya mulai dari paragraf
+        dan kawan kawannya, tetap semangat ya kawan. Aku yakin kamu akan benar
+        benar berhasil!
+      </p>
+    </div>
+
+    <script>
+      document.getElementById("title").remove();
+
+      const description = document.getElementById("description");
+      description.remove();
+    </script>
+  </body>
+</html>
