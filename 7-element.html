@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element</title>
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <p id="content"></p>
+
+    <script>
+      // lebih lengkap nya tentang element cari di link berikut
+      // https://developer.mozilla.org/en-US/docs/Web/API/Element
+
+      const title = document.getElementById("title");
+      title.textContent = "This is Title";
+
+      const content = document.getElementById("content");
+      content.textContent =
+        "Ini adalah paragraf yang berjudul di atas dan ini isinya banyak sekali so tetap semangat untuk meraih cita cita sebagai software engineer";
+    </script>
+  </body>
+</html>
