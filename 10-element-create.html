@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Create</title>
+  </head>
+  <body>
+    <div id="content"></div>
+
+    <script>
+      const content = document.getElementById("content");
+
+      const judul = document.createElement("h1");
+      judul.textContent = "Indonesia Juara";
+      content.appendChild(judul);
+
+      const desc = document.createElement("p");
+      desc.textContent =
+        "Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara, Indonesia Juara";
+      content.appendChild(desc);
+
+      const desc2 = document.createElement("h4");
+      desc2.textContent = "Lanjutan nya Indonesia pasti juara";
+      desc.appendChild(desc2);
+    </script>
+  </body>
+</html>
