@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Method</title>
+  </head>
+  <body>
+    <ul id="menu">
+      <li id="first">first</li>
+      <li id="second">second</li>
+      <li id="third">third</li>
+      <li id="fourth">fourth</li>
+      <li id="fifth">fifth</li>
+    </ul>
+    <script>
+      // selengkapnya di Node memiliki banyak sekali property
+      // developer.mozilla.org/en-US/docs/Web/API/Node#properties
+
+      const menu = document.getElementById("menu");
+      menu.removeChild(document.getElementById("first"));
+      menu.removeChild(document.getElementById("second"));
+      menu.removeChild(document.getElementById("third"));
+
+      console.info(menu);
+    </script>
+  </body>
+</html>
