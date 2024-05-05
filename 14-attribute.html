@@ -13,11 +13,15 @@
     />
 
     <script>
-      const logo = document.getElementById("logo");
-      const src = logo.getAttributeNode("src");
+      // getAttributeNode berfungsi untuk mengambil key value atau object sedangkan getAttribute hanya value nya saja
 
-      console.info(src.name);
-      console.info(src.value);
+      const logo = document.getElementById("logo");
+      // const src = logo.getAttributeNode("src");
+      const src = logo.getAttribute("src");
+
+      console.info(src);
+      // console.info(src.name);
+      // console.info(src.value);
     </script>
   </body>
 </html>
