@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nodelist Static</title>
+  </head>
+  <body>
+    <ul id="menu1">
+      <li id="first">first</li>
+      <li id="second">second</li>
+      <li id="third">third</li>
+    </ul>
+
+    <ul id="menu2">
+      <li>wahid</li>
+      <li>isnaini</li>
+      <li>tsalasah</li>
+    </ul>
+
+    <script>
+      // querySelectorAll sifatnya static, bukan live
+      let list = document.querySelectorAll("li");
+
+      const menu1 = document.getElementById("menu1");
+      menu1.appendChild(document.createElement("li"));
+      menu1.appendChild(document.createElement("li"));
+      // ini isinya 6
+      console.info(list);
+
+      list = document.querySelectorAll("li");
+      // ini isinya 8
+      console.info(list);
+    </script>
+  </body>
+</html>
