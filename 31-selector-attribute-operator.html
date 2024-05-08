@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Attribute Operator</title>
+  </head>
+  <body>
+    <div class="rifai">Rifai</div>
+    <div class="rifaiAb">Abdurrohman</div>
+    <div class="tyrifai">Tyas</div>
+  </body>
+
+  <script>
+    // const list = document.querySelectorAll("div[class=eko]")
+    const list = document.querySelectorAll("div[class^=rifai]");
+    console.info(list);
+  </script>
+</html>
