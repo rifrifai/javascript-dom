@@ -18,5 +18,24 @@
       <input type="submit" value="submit" />
     </form>
     <div id="commentList"></div>
+
+    <script>
+      document.querySelector("form[name=commentForm]").onsubmit = function (
+        event
+      ) {
+        // preventDefault berfungsi biar tidak melakukan submit
+        event.preventDefault();
+        const commentList = document.getElementById("commentList");
+        const comment = document.getElementById("comment").value;
+        const from = document.getElementById("from").value;
+
+        const commentItem = document.createElement("p");
+        commentItem.textContent = `${comment} : ${from}`;
+        commentList.appendChild(commentItem);
+
+        // document.forms[`commentForm`].reset();
+        document.querySelector("form[name=commentForm]").reset();
+      };
+    </script>
   </body>
 </html>
